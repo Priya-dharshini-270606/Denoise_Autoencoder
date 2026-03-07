@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #ffffff;
+  padding: 35px 45px;
+  border-radius: 15px;
+  width: 420px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.container h2 {
+  margin-bottom: 25px;
+  color: #1d2671;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* File Input */
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px dashed #c33764;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* Image Output */
+img {
+  margin-top: 25px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  border: 3px solid #1d2671;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 25px;
+  }
+}
